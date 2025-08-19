@@ -5,6 +5,18 @@
 [![Flask](https://img.shields.io/badge/Flask-2.3+-red.svg)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## Docker 概述
+
+```bash
+# 拉取最新版本
+docker pull abiaogeai002/flask-file-server:latest
+
+# 运行容器
+docker run -d -p 5000:5000 -v $(pwd)/files:/app/files --name flask-file-server abiaogeai002/flask-file-server:latest
+```
+
+**项目地址**: [https://github.com/BiaogeAI002/n8n-local-Flask](https://github.com/BiaogeAI002/n8n-local-Flask)
+
 一个轻量级的Flask文件上传服务，专为替代复杂的MinIO等对象存储服务而设计，避免复杂的AWS签名认证问题。特别适合n8n工作流集成使用。
 
 ## 快速开始
