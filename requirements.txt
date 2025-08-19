@@ -1,0 +1,7 @@
+# Flask文件上传服务依赖
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# 可选：如果需要更多功能
+# flask-cors==4.0.0  # 跨域支持
+# gunicorn==21.2.0   # 生产环境WSGI服务器
